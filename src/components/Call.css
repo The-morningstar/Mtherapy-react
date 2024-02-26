@@ -1,0 +1,65 @@
+.callcontainer {
+    background-color: #002337;
+    height: 500px;
+    margin-top: -100px;
+  }
+  
+  .callcontent {
+    display: flex;
+  }
+  
+  .text-container {
+    flex: 1; /* Takes up the remaining space */
+    margin-left: 40px;
+    color: #fff;
+  }
+  
+  .callheading {
+    font-weight: 800;
+    color: #fff;
+    font-size: 72px;
+    margin-top: 30px;
+    padding-top: 30px;
+    letter-spacing: 5px;
+  }
+  
+  .callsubtext {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .calldesc {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .join {
+    margin-top: 40px;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 2s ease, text-decoration 0.3s ease;
+  }
+  
+  .join:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  
+  .nurseimg {
+    margin-left: auto;
+    display: block;
+    width: 500px;
+    height: auto;
+    
+  }
+  

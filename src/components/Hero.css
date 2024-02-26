@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    background-image: url('../../public/Images/hero.png');
+    width: auto;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading,
+.subtext {
+    display: flex;
+    font-weight: 700;
+    font-size: 100px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+    font-style: normal;
+    color: aliceblue;
+    padding-right: 20px;
+    margin-right: 40px;
+}
+
+.heading {
+    margin-top: 100px;
+}
+
+.subtext {
+    font-family: "Yellowtail", cursive;
+    padding-right: 320px;
+    margin-top: -20px; /* Adjust as needed */
+    letter-spacing: 10px;
+}
+
+.desc{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: aliceblue;
+    margin-right: 100px;
+    padding-right:20px ;
+    margin-top: 40px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    .hero-container {
+        width: auto;
+        height: 400px;
+    }
+
+    .heading,
+    .subtext {
+    display: flex;
+    font-weight: 800;
+    font-size: 60px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+    font-style: normal;
+    color: aliceblue;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+.heading {
+    margin-top: 80px;
+}
+
+.subtext {
+    font-family: "Yellowtail", cursive;
+    padding-right: 180px;
+    margin-top: -2; 
+    letter-spacing: 10px;
+}
+
+
+.desc{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: aliceblue;
+    margin-right: 40px;
+    padding-right:30px ;
+    margin-top: 10;
+}
+
+}
+
+
+@media (max-width: 400px) {
+    .hero-container {
+        width: auto;
+        height: 200px;
+    }
+
+    .heading,
+    .subtext {
+    display: flex;
+    font-weight: 800;
+    font-size: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+    font-style: normal;
+    color: aliceblue;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+.heading {
+    margin-top: 60px;
+}
+
+.subtext {
+    font-family: "Yellowtail", cursive;
+    padding-right: 30px;
+    margin-top: 0; /* Adjust as needed */
+    letter-spacing: 10px;
+}
+
+
+.desc{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 6px;
+    color: aliceblue;
+    margin-right: 10px;
+    padding-right:10px ;
+    margin-top: 4px;
+}
+}
