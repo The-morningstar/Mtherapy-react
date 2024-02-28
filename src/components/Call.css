@@ -1,65 +1,151 @@
+/* Default styles */
 .callcontainer {
-    background-color: #002337;
-    height: 500px;
-    margin-top: -100px;
+  background-color: #002337;
+  height: 500px;
+  margin-top: -100px;
+}
+
+.callcontent {
+  display: flex;
+}
+
+.text-container {
+  flex: 1;
+  margin-left: 40px;
+  color: #fff;
+}
+
+.callheading {
+  font-weight: 800;
+  color: #fff;
+  font-size: 72px;
+  margin-top: 30px;
+  padding-top: 30px;
+  letter-spacing: 5px;
+}
+
+.callsubtext {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.calldesc {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.join {
+  margin-top: 40px;
+  display: inline-block;
+  padding-top: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 2s ease, text-decoration 0.3s ease;
+}
+
+.join:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.nurseimg {
+  margin-left: auto;
+  display: block;
+  width: 500px;
+  height: auto;
+}
+
+/* Media Query for screens with max-width 800px */
+@media screen and (max-width: 800px) {
+  .callcontainer {
+    max-height: 450px; /* Adjust height for smaller screens */
+    width: auto;
+    overflow: hidden;
   }
-  
+
   .callcontent {
-    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
   }
-  
+
   .text-container {
-    flex: 1; /* Takes up the remaining space */
-    margin-left: 40px;
-    color: #fff;
+    flex: 1;
+    margin-left: 10px;
   }
-  
+
   .callheading {
-    font-weight: 800;
-    color: #fff;
-    font-size: 72px;
-    margin-top: 30px;
-    padding-top: 30px;
-    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    letter-spacing: 3px;
   }
-  
+
   .callsubtext {
-    font-size: 35px;
-    font-style: italic;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-  
-  .calldesc {
-    color: #fff;
-    margin-top: 20px;
-    font-size: 15px;
-  }
-  
-  .join {
-    margin-top: 40px;
-    display: inline-block;
-    padding-top: 10px;
-    background-color: transparent;
-    color: #ffffff;
     font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease, color 2s ease, text-decoration 0.3s ease;
+    margin-top: 10px;
   }
-  
-  .join:hover {
-    text-decoration: underline;
-    color: #ffffff;
+
+  .calldesc {
+    margin-top: 10px;
+    font-size: 14px;
   }
-  
+
+  .join {
+    margin-top: 20px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
   .nurseimg {
-    margin-left: auto;
-    display: block;
-    width: 500px;
+    width: 200px;
     height: auto;
-    
   }
-  
+}
+
+
+/* Media Query for screens with max-width 400px */
+@media (max-width: 400px) {
+  .callcontainer {
+    height: 400px; /* Adjust height for even smaller screens */
+    width: auto;
+  }
+
+  .text-container {
+    margin-left: 10px;
+  }
+
+  .callheading {
+    font-size: 24px;
+    margin-top: 10px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+  }
+
+  .callsubtext {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .calldesc {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .join {
+    margin-top: 10px;
+    padding-top: 3px;
+    font-size: 14px;
+  }
+
+  .nurseimg {
+    width: 150px;
+    height: auto;
+  }
+}
